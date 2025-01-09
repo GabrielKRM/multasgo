@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIVs Interativas em ASP.NET</title>
+
+<style>
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f4f4f9;
+}
+.container{
+    display: flex;
+    gap: 10px;
+}
+.box {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+.box:hover {
+    transform: scale(1.1);
+    border-radius: 10px;
+}
+.box1 { background-color: #ff6f61;}
+.box2 { background-color: #6fa8dc;}
+.box3 { background-color: #93c47d;}
+
+</style>
+
+</head>
+<body>
+    <h1>Site do Gabriel</h1>
+    <h2>DIVS interativas</h2>
+
+<div class="container">
+    <div class="box box1" onclick="alertMessage('box 1')">Caixa 01</div>
+    <div class="box box2" onclick="alertMessage('box 2')">Caixa 02</div>
+    <div class="box box3" onclick="alertMessage('box 3')">Caixa 03</div>
+    
+
+</div>
+
+<script>
+function alertMessage(message) {
+    alert(`você clicou em ${message}!`);
+}
+
+
+</script>
+
+
+
+</body>
+</html>

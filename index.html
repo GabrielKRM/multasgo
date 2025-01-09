@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Cadastro de Processos</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: arial, sans-serif;
+            background: linear-gradient(to bottom, #416c83, #1f035d);
+            color: #fff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        .navbar {
+            background-color: #010101;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .navbar .logo {
+            font-size: 1.5rem; 
+            font-weight: bold;
+            color: #fffeff;  
+        }
+        .navbar ul{
+            list-style: none;
+            display: flex;
+            gap: 15px;
+        }
+        .navbar ul li {
+            display: inline;
+        }
+        .navbar ul li a{
+            text-decoration: none;
+            color: white;
+            padding: 8px 12px;
+            border-radius: 10px;
+            transition: background-color 1.3;
+        }
+        .navbar ul li a:hover {
+            background-color: red;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            align-items: center;
+            justify-content: center;
+            flex: 1;
+            text-align: center;
+        }
+        h1{
+            margin-bottom: 20px;
+            font-size: 2.5rem;
+            animation: fade-in 1s ease-in;
+        }
+        form {
+            background: rgba(#255,#255, #255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            width: 100px;
+            min-width: 400px;
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 10px;
+            outline: none;
+            font-size: 1rem;
+        }
+        button {
+            background-color: #2aa2ec;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            width: 100%;
+            transition: background-color 0.3s;
+        }
+        button:hover{
+            background-color: #191971;
+        }
+        @keyframes fade-in {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        }
+        footer {
+            background-color: #333;
+            padding: 10px 0;
+           text-align: center;
+           font-size: 0.9rem;
+        }
+
+
+
+    </style>
+
+
+
+
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">MultasGo</div>
+            <ul>
+                <li> <a href="index.html">Inicios</a></li>
+                <li> <a href="servicos.html">Serviços</a></li>
+                <li> <a href="sobre.html">Sobre</a></li>
+                <li> <a href="precos.html">Preços</a></li>
+                <li> <a href="contato.html">contato</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <main class="container">
+
+        <h1> Bem Vind@, faça seu login: </h1>
+        <form id="LoginForm">
+            <input type="text" name="" id="username" placeholder="Entre com o seu nome" required>
+
+            <button type="submit">Fazer Login</button>
+
+        </form>
+<p id="saudacao" style="margin-top: 20px; font-size: 1.2 rem; display:none;"></p>
+</main>
+
+<footer>
+   O_O © 2025 MultaPro. todos os Direitos Reservados.
+</footer>
+
+
+<script>
+const form = document.getElementById('LoginForm')
+const saudacao = document.getElementById('saudacao')
+
+form.addEventListener('submit', (evento) => {
+    evento.preventDefault();
+
+    const username = document.getElementById('username').value;
+    saudacao.textContent = `olá, ${username}! seja bem vind@ ao nosso site.`
+    saudacao.style.display = 'block';
+    form.style.display = 'none';
+})
+
+
+
+</script>
+
+</body>
+
+</html>
