@@ -136,40 +136,32 @@
 
         </nav>
     </header>
-
     <main class="container">
-
-        <h1> Bem Vind@, faça seu login: </h1>
-        <form id="LoginForm">
-            <input type="text" name="" id="username" placeholder="Entre com o seu nome" required>
-
-            <button type="submit">Fazer Login</button>
-
-        </form>
-<p id="saudacao" style="margin-top: 20px; font-size: 1.2 rem; display:none;"></p>
-</main>
-
+        <h1>Conheça Nossos Planos</h1>
+        <div class="pricing-table">
+            <div class="pricing-card">
+                <h2>Básico</h2>
+                <p>Consulta de Multas</p>
+                <p><strong>R$49,90</strong>/mês</p>
+                <button>Assinar</button>
+            </div>
+            <div class="pricing-card">
+                <h2>Avançado</h2>
+                <p>Consulta + Recursos de Multas</p>
+                <p><strong>R$99,90</strong>/mês</p>
+                <button>Assinar</button>
+            </div>
+            <div class="pricing-card">
+                <h2>Premium</h2>
+                <p>Todos os serviços + Suporte Prioritário</p>
+                <p><strong>R$149,90</strong>/mês</p>
+                <button>Assinar</button>
+            </div>
+        </div>
+    </main>
 <footer>
    O_O © 2025 MultaPro. todos os Direitos Reservados.
 </footer>
-
-
-<script>
-const form = document.getElementById('LoginForm')
-const saudacao = document.getElementById('saudacao')
-
-form.addEventListener('submit', (evento) => {
-    evento.preventDefault();
-
-    const username = document.getElementById('username').value;
-    saudacao.textContent = `olá, ${username}! seja bem vind@ ao nosso site.`
-    saudacao.style.display = 'block';
-    form.style.display = 'none';
-})
-
-
-
-</script>
 
 </body>
 

@@ -4,7 +4,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Preços - MultaPro</title>
+    <title>Sistema de Cadastro de Processos</title>
+
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">MultasGo</div>
+            <ul>
+                <li> <a href="index.html">Inicios</a></li>
+                <li> <a href="servicos.html">Serviços</a></li>
+                <li> <a href="sobre.html">Sobre</a></li>
+                <li> <a href="precos.html">Preços</a></li>
+                <li> <a href="contato.html">contato</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
 
     <style>
         * {
@@ -13,7 +32,7 @@
             box-sizing: border-box;
         }
         body {
-            font-family: Arial, sans-serif;
+            font-family: arial, sans-serif;
             background: linear-gradient(to bottom, #416c83, #1f035d);
             color: #fff;
             min-height: 100vh;
@@ -32,7 +51,7 @@
             font-weight: bold;
             color: #fffeff;  
         }
-        .navbar ul {
+        .navbar ul{
             list-style: none;
             display: flex;
             gap: 15px;
@@ -40,7 +59,7 @@
         .navbar ul li {
             display: inline;
         }
-        .navbar ul li a {
+        .navbar ul li a{
             text-decoration: none;
             color: white;
             padding: 8px 12px;
@@ -59,107 +78,76 @@
             flex: 1;
             text-align: center;
         }
-        h1 {
+        h1{
             margin-bottom: 20px;
-            font-size: 2.5rem;
-            animation: fade-in 1s ease-in;
+            font-size: 1.5rem;
+           
         }
-        .pricing-table {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
-            width: 80%;
-            margin: 0 auto;
+        h2{
+            margin-bottom: 50px;
+            font-size: 1.2rem;
         }
-        .pricing-card {
-            background: rgba(255, 255, 255, 0.1);
-            padding: 20px;
+        form {
+            background: rgba(#255,#255, #255, 0.1);
+            padding: 25px;
             border-radius: 10px;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-            text-align: center;
+            width: 100px;
+            min-width: 400px;
         }
-        .pricing-card h2 {
-            font-size: 1.8rem;
-            margin-bottom: 10px;
-        }
-        .pricing-card p {
-            font-size: 1.1rem;
+        input {
+            width: 100%;
+            padding: 10px;
             margin: 10px 0;
-        }
-        .pricing-card button {
-            background-color: #2aa2ec;
-            color: white;
             border: none;
-            padding: 10px 15px;
-            border-radius: 5px;
+            border-radius: 10px;
+            outline: none;
             font-size: 1rem;
-            cursor: pointer;
-            transition: background-color 0.3s;
         }
-        .pricing-card button:hover {
-            background-color: #191971;
-        }
+       
         @keyframes fade-in {
             from {
                 opacity: 0;
                 transform: translateY(-20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
         }
         footer {
             background-color: #333;
             padding: 10px 0;
-            text-align: center;
-            font-size: 0.9rem;
+           text-align: center;
+           font-size: 0.9rem;
+           margin-top: 350px;
         }
+
+
+
     </style>
-</head>
 
-<body>
+<h1>Somos uma empresa dedicada a simplificar a vida de motoristas, oferecendo soluções completas e acessíveis para questões relacionadas a multas de trânsito.
+     Com anos de experiência no setor, nosso compromisso é garantir que você tenha o suporte necessário para resolver seus problemas de forma rápida, transparente e eficiente.
+    Nossa missão é proporcionar tranquilidade e segurança aos nossos clientes, oferecendo serviços personalizados que atendem às suas necessidades específicas.
+     Seja para consultar multas, elaborar recursos ou parcelar débitos, nossa equipe está preparada para oferecer um atendimento ágil e de qualidade.</h1>
 
-    <header>
-        <nav class="navbar">
-            <div class="logo">MultasGo</div>
-            <ul>
-                <li><a href="index.html">Início</a></li>
-                <li><a href="servicos.html">Serviços</a></li>
-                <li><a href="sobre.html">Sobre</a></li>
-                <li><a href="precos.html">Preços</a></li>
-                <li><a href="contato.html">Contato</a></li>
-            </ul>
-        </nav>
-    </header>
+     <h2>Por que escolher a gente?
 
-    <main class="container">
-        <h1>Conheça Nossos Planos</h1>
-        <div class="pricing-table">
-            <div class="pricing-card">
-                <h2>Básico</h2>
-                <p>Consulta de Multas</p>
-                <p><strong>R$49,90</strong>/mês</p>
-                <button>Assinar</button>
-            </div>
-            <div class="pricing-card">
-                <h2>Avançado</h2>
-                <p>Consulta + Recursos de Multas</p>
-                <p><strong>R$99,90</strong>/mês</p>
-                <button>Assinar</button>
-            </div>
-            <div class="pricing-card">
-                <h2>Premium</h2>
-                <p>Todos os serviços + Suporte Prioritário</p>
-                <p><strong>R$149,90</strong>/mês</p>
-                <button>Assinar</button>
-            </div>
-        </div>
-    </main>
+        Expertise comprovada em recursos e regularização de multas.
+        Atendimento personalizado com foco em resultados.
+        Soluções práticas, legais e acessíveis.
+        Estamos aqui para ser o seu parceiro de confiança no trânsito. Nossa prioridade é ajudar você a dirigir com tranquilidade, sem preocupações ou surpresas desagradáveis.
+        
+        Conte conosco para transformar burocracia em facilidade!</h2>
 
-    <footer>
-        O_O © 2025 MultaPro. Todos os direitos reservados.
-    </footer>
+
+
+
+<footer>
+   O_O © 2025 MultaPro. todos os Direitos Reservados.
+</footer>
+
 
 </body>
 
